@@ -1,3 +1,6 @@
+import React from "react";
+import "../Search/Search.css";
+
 const SearchComponent = (props) => {
   const { text, setText } = props;
 
@@ -5,7 +8,15 @@ const SearchComponent = (props) => {
     setText(e.target.value);
   };
 
-  return <input type="text" value={text} onChange={onChangeHandler}></input>;
+  return (
+    <input
+      className="search-input"
+      type="text"
+      value={text}
+      onChange={onChangeHandler}
+      placeholder="Type here to search awesome gifs !"
+    ></input>
+  );
 };
 
 export const Search = SearchComponent;

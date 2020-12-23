@@ -1,11 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Search, List } from "./components";
 import { getGifs } from "./services/giphyservice";
+import useDebounce from "./utils/debounce";
 
 function App() {
   const [text, setText] = useState("");
   const [data, setData] = useState(null);
+
+  const debouncedText = useDebounce(text, 500);
+
+  useEffect(() => {
+    async function fetchGifs(debouncedText) {
+      if (debouncedText) {
+        const result = await getGifAsync(debouncedText);
+        setData(result);
+      } else {
+        setData(null);
+      }
+    }
+    fetchGifs(debouncedText);
+  }, [debouncedText]);
 
   const getGifAsync = async (text) => {
     if (Boolean(text)) {
@@ -15,15 +30,12 @@ function App() {
     }
   };
 
-  const onClickHandler = () => {
-    getGifAsync(text).then((d) => setData(d));
-  };
-
   return (
     <div className="App">
-      <Search text={text} setText={setText}></Search>
-      <button onClick={onClickHandler}>Search</button>
-      <List data={data} setData={setData}></List>
+      <div style={{ padding: "0px 30px" }}>
+        <Search text={text} setText={setText}></Search>
+        <List data={data} setData={setData}></List>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.search-input {
+  flex: 1;
+  border: 1px solid #d6d8da;
+  height: 46px;
+  font-size: 14px;
+  padding: 4px 0 0;
+  display: block;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 48px;
+  border-radius: 6px;
+  width: 99%;
+  padding: 0 8px;
+}

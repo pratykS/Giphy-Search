@@ -1,3 +1,4 @@
+import React from "react";
 import { Card } from "../../components";
 const ListComponent = (props) => {
   const { data } = props;
