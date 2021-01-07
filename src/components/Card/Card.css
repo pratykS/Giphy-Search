@@ -1,8 +1,8 @@
 .item{
      display: inline-block;
      background: #fff;
-     padding: 1em;
-     margin: 0 0 1.5em;
+     /* padding: 1em; */
+     margin: 0 0 0.5em;
      width: auto;
      -webkit-transition:1s ease all;
      box-sizing: border-box;
@@ -13,6 +13,57 @@
 
 img{
   height: auto;
-  width:360px;
+  width:320px;
   /* max-width: 100%; */
+}
+
+@media screen and (min-width: 320px) {
+  img {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+
+  img {
+    width: 190px;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  img {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 961px) {
+
+  img {
+    width: 300px;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+
+  img {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  img {
+    width: 315px;
+  }
+}
+@media screen and (min-width: 1481px) {
+  img {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1681px) {
+  img {
+    width: 300px;
+  }
 }

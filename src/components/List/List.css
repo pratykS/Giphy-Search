@@ -1,9 +1,20 @@
 .masonry-grid{
   column-count: 4;
-  column-gap: .5em;
+  /* column-gap: .5em; */
   /* max-width: 980px; */
   margin: auto;
   width: 100%;
+}
+/* @media (min-width: 1200px) {
+    .masonry-grid {
+        column-count: 4;
+    }
+}
+
+@media(min-width: 800px) {
+    .masonry-grid {
+        column-count: 3;
+    }
 }
 
 @media(max-width: 800px) {
@@ -16,10 +27,50 @@
     .masonry-grid {
         column-count: 2;
     }
+} */
+
+@media screen and (min-width: 320px) {
+    .masonry-grid {
+        column-count: 2;
+    }
 }
 
-@media(max-width: 400px) {
+@media screen and (min-width: 481px) {
+
     .masonry-grid {
-        column-count: 1;
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 961px) {
+
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .masonry-grid {
+        column-count: 5;
+    }
+}
+
+@media screen and (min-width: 1681px) {
+    .masonry-grid {
+        column-count: 6;
     }
 }
