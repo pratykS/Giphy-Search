@@ -1,0 +1,18 @@
+.item{
+     display: inline-block;
+     background: #fff;
+     padding: 1em;
+     margin: 0 0 1.5em;
+     width: auto;
+     -webkit-transition:1s ease all;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+img{
+  height: auto;
+  width:300px;
+  /* max-width: 100%; */
+}

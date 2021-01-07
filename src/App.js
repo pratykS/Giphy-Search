@@ -5,7 +5,7 @@ import { getGifs } from "./services/giphyservice";
 import useDebounce from "./utils/debounce";
 
 function App() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("awesome");
   const [data, setData] = useState(null);
 
   const debouncedText = useDebounce(text, 500);

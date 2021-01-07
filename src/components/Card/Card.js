@@ -1,15 +1,10 @@
 import React from "react";
+import "./Card.css";
 const CardComponent = (props) => {
   const { content } = props;
-  //   console.log("Card", content.embed_url);
   return (
-    <div style={{ display: "inline-block", padding: "10px" }}>
-      <img
-        src={`${content.images["preview_gif"].url}`}
-        width={200}
-        height={200}
-        alt="Laugh"
-      ></img>
+    <div className="item">
+      <img src={`${content.images["downsized"].url}`} alt="Laugh" />
     </div>
   );
 };

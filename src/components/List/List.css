@@ -1,0 +1,25 @@
+.masonry-grid{
+  column-count: 4;
+  column-gap: .5em;
+  /* max-width: 980px; */
+  margin: auto;
+  width: 100%;
+}
+
+@media(max-width: 800px) {
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+@media(max-width: 600px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media(max-width: 400px) {
+    .masonry-grid {
+        column-count: 1;
+    }
+}
