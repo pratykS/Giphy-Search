@@ -17,9 +17,15 @@ img{
   /* max-width: 100%; */
 }
 
+@media screen and (min-width: 240px) {
+  img {
+    width: 220px;
+  }
+}
+
 @media screen and (min-width: 320px) {
   img {
-    width: 180px;
+    width: 240px;
   }
 }
 

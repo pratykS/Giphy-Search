@@ -29,16 +29,22 @@
     }
 } */
 
+@media screen and (min-width: 240px) {
+    .masonry-grid {
+        column-count: 1;
+    }
+}
+
 @media screen and (min-width: 320px) {
     .masonry-grid {
-        column-count: 2;
+        column-count: 1;
     }
 }
 
 @media screen and (min-width: 481px) {
 
     .masonry-grid {
-        column-count: 3;
+        column-count: 2;
     }
 }
 
